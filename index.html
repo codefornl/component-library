@@ -1,0 +1,209 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <!-- http://atomicdesign.bradfrost.com/table-of-contents/ -->
+    
+    <h1>Code for NL componentenbibliotheek</h1>
+    
+    <h2>Banner</h2>
+    
+    <div style="border: 1px solid gray">
+        
+        <div class="code-for-nl__banner">
+            <h2>Samenwerken aan de<br>Digitale Overheid.</h2>
+            <a href="/" class="logo">
+                <img alt="</" src="https://www.codefor.nl/img/larger_CfNL.png">
+                <h1>Code for NL</h1>
+            </a>
+        </div>
+        
+        <style>
+            .code-for-nl__banner {
+                text-align: center;
+                font-family: "Lato", "Verdana", "Arial", sans-serif;
+                font-size: 100%;
+            }
+            .code-for-nl__banner a {
+                text-decoration: none;
+            }
+            .code-for-nl__banner h2 {
+                line-height: 2em;
+                margin: 80px 0;
+                font-size: 1.6em;
+                font-weight: 100;
+                text-align: center;
+                color: #808284;
+            }
+            .code-for-nl__banner .logo {
+                display: block;
+                width: 170px;
+                text-align: center;
+                margin: 20px auto 20px;
+            }
+            .code-for-nl__banner .logo img {
+                display: block;
+                width: 150px;
+            }
+            .code-for-nl__banner .logo h1 {
+                color: #74C7A8;
+                font-size: 1.4em;
+                margin-top: 0;
+                line-height: 1.2em;
+                margin-bottom: 1em;
+                font-weight: 100;
+            }
+        </style>
+        
+        <script>
+            (function () {
+                var containerDiv = document.scripts[document.scripts.length -1].parentElement;
+                console.log(containerDiv, " loaded");
+            })();
+        </script>
+        
+    </div>
+    
+    <h2>Buttons</h2>
+    
+    <div style="border: 1px solid gray">
+        
+        <a href="#" class="code-for-nl__button">Meld je aan voor onze nieuwsbrief</a>
+        
+        <a href="#" class="code-for-nl__button code-for-nl__button-cta">Meld je aan voor onze nieuwsbrief</a>
+        
+        <style>
+            .code-for-nl__button {
+                text-align: center;
+                font-family: "Lato", "Verdana", "Arial", sans-serif;
+                font-size: 100%;
+                display: block;
+                font-size: 1.2em;
+                color: white;
+                background: #aaa;
+                box-shadow: 0px 3px 2px #d3d3d3;
+                margin: 0.8em;
+                padding: 0.8em;
+                text-decoration: none;
+                border-radius: 0.4em;
+                width: 10em;
+                margin: 80px auto 40px;
+                text-align: center;
+                line-height: 1.6em;
+            }
+            .code-for-nl__button:active {
+                box-shadow: none;
+                background: #999;
+            }
+            .code-for-nl__button-cta {
+                background: #F7931D;
+            }
+            .code-for-nl__button-cta:active {
+                background: #d07c19;
+            }
+        </style>
+        
+    </div>
+    
+    <h2>Persoon</h2>
+    
+    <div style="border: 1px solid gray; text-align: center">
+        
+        <script src="https://use.fontawesome.com/164ce3f549.js"></script>
+        <link href="https://use.fontawesome.com/164ce3f549.css" media="all" rel="stylesheet">
+        
+        <div class="code-for-nl__persoon">
+            <img class="pasfoto" src="https://www.codefor.nl/img/milo.jpg">
+            <p>
+                Milo van der Linden<br>
+                voorzitter<br>
+                <a href="mailto:milo@codefor.nl">milo@codefor.nl</a>
+            </p>
+            <p class="social">
+                <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/milovanderlinden/"></a>
+                <a class="twitterBtn smGlobalBtn" href="https://twitter.com/miblon"></a>
+                <a class="githubBtn smGlobalBtn" href="https://github.com/milovanderlinden"></a>
+                <a class="websiteBtn smGlobalBtn" href="http://www.jgroenen.nl"></a>
+            </p>
+        </div>
+        
+        <style>
+            .code-for-nl__persoon {
+                font-family: "Lato", "Verdana", "Arial", sans-serif;
+                font-size: 100%;
+                font-weight: 100;
+                color: #111;
+                width: 200px;
+                padding: 10px;
+                border-bottom: 1px solid #aaa;
+                display: inline-block;
+                margin: 10px;
+            }
+            .code-for-nl__persoon .pasfoto {
+                width: 100%;
+                border-radius: 50%;
+            }
+            .code-for-nl__persoon p {
+                margin: 1em 0em;
+                line-height: 1.4em;
+                overflow: hidden;
+            }
+            .code-for-nl__persoon a {
+                color: #74C7A8;
+                text-decoration: none;
+            }
+            .code-for-nl__persoon .social a {
+                margin-right: 0.4em;
+            }
+            
+            .code-for-nl__persoon .linkedinBtn {
+                background: #0094BC;
+            }
+            .code-for-nl__persoon .linkedinBtn:before {
+                font-family: "FontAwesome";
+                content: "\f0e1";
+            }
+            .code-for-nl__persoon .twitterBtn {
+                background: #00ABE3;
+            }
+            .code-for-nl__persoon .twitterBtn:before {
+                font-family: "FontAwesome";
+                content: "\f099";
+            }
+            .code-for-nl__persoon .githubBtn {
+                background: #171515;
+            }
+            .code-for-nl__persoon .githubBtn:before {
+                font-family: "FontAwesome";
+                content: "\f09b";
+            }
+            .code-for-nl__persoon .websiteBtn {
+                background-image: url(https://www.codefor.nl/img/social/website.png);
+                background-size: 32px 32px;
+            }
+            
+            .code-for-nl__persoon .smGlobalBtn {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+                padding: 0;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 30px;
+                border-radius: 2px;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                vertical-align: bottom;
+            }
+        </style>
+        
+    </div>
+    
+</body>
+</html>
